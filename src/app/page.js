@@ -13,7 +13,7 @@ export default function Home() {
     const convertImageToText = async () => {
       if (!selectedImage) return;
       setLoading(true);
-      const worker = await createWorker("eng");
+      const worker = await createWorker("spa");
 
       try {
         const { data } = await worker.recognize(selectedImage);
